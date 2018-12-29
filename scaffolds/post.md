@@ -1,6 +1,6 @@
 ---
 title: {{ title }}
 date: {{ date }}
-cover: /img/welcome-cover.jpg
+cover: /images/common/img{num}.jpg
 tags:
 ---

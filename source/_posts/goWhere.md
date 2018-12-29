@@ -1,7 +1,7 @@
 ---
 title: 使用VPS翻墙
 date: 2018-12-29 15:17:19
-cover: /img/welcome-cover.jpg
+cover: /images/common/img2.jpg
 tags: 翻墙 梯子
 ---
 
