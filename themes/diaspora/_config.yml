@@ -1,6 +1,6 @@
 # 头部菜单，title: link
 menu:
-  Whoami: /whoami
+  Whoami: https://github.com/l4503071/blog
   Github: https://github.com/l4503071
 
 # 是否显示目录
