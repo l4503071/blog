@@ -78,6 +78,11 @@ theme: diaspora
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repo: https://github.com/l4503071/blog.git
-  branch: master
+  type: rsync
+  host: 47.110.148.208
+  port: 22
+  user: root
+  root: /root/sites/blog
+  delete: true
+  verbose: true
+  ignore_errors: false
