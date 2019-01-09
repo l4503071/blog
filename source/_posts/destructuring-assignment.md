@@ -1,7 +1,7 @@
 ---
 title: destructuring-assignment
 date: 2018-12-29 19:10:08
-cover: /images/common/img3.jpg
+cover: /images/common/img3.jpeg
 tags: destructuring assignment 解构赋值
 ---
 
