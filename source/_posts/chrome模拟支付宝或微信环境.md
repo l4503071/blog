@@ -16,6 +16,8 @@ Mozilla/5.0 (iPhone; CPU iPhone OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHT
 ````
 Mozilla/5.0 (iPhone; CPU iPhone OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16B92 MicroMessenger/6.7.2 NetType/WIFI Language/zh_CN
 ````
+# 获取本机 userAgent 方法
+访问 [util.sunshine1990.com/user_agent](http://util.sunshine1990.com/user_agent) 即可查看
 
 # 步骤
 
