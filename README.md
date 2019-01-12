@@ -4,7 +4,7 @@
 ## 微信号: sunshineBIT
 
 ### 运行命令
-安装: yarn install
-调试: hexo server
-线上: hexo g
-部署: hexo d
+- 安装: yarn install
+- 调试: hexo server
+- 线上: hexo g
+- 部署: hexo d
