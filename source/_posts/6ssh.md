@@ -45,3 +45,16 @@ Offending key in /**/.ssh/known_hosts:2RSA host key for *.*.*.** has changed and
 2. client在登陆server的时候，如果 公钥 匹配，则使用 公钥 对随机生成的 字符串 进行加码，并返回给client；
 3. client使用自己的私钥对字符串进行解密，返回给server；
 4. server验证登陆。
+
+## 简化登录流程
+每次登录时，需要指定ip和用户名，可以使用以下方式简化（以登录阿里云威力）
+1. 编辑 ~/.ssh/config 文件
+2. 输入
+```
+Host "ali"
+  HostName "47.110.148.208"
+  Port 22
+  User "root"
+  IdentityFile "~/.ssh/id_rsa"
+```
+即可使用 `ssh ali` 登录远程服务器
