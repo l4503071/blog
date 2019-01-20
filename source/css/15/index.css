@@ -1,0 +1,14 @@
+.ta-wrapper {}
+.ta {
+  display: inline-block;
+  width: 100%;
+  text-align: justify;
+  vertical-align: top;
+}
+.ta::after {
+  content: '';
+  display: inline-block;
+  text-align: justify;
+  height: 0;
+  width: 100%;
+}
