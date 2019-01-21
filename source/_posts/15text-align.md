@@ -1,6 +1,6 @@
 ---
 title: text-align:justify
-cover: '/images/common/img{num}.jpg'
+cover: '/images/common/img15.jpeg'
 date: 2019-01-20 16:57:08
 tags: text-align text-align-last justify 
 ---
