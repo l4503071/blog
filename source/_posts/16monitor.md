@@ -7,8 +7,8 @@ tags: monitor 监控 方案
 # 前端监控方案简单分析
 
 ## 分类
-1. Eagle(日志监控，邮件报警)
-2. Grafana(图形界面监控，邮件(或其他)报警
+1. Eagle 日志监控，邮件报警
+2. Monitor 图形界面监控，邮件(或其他)报警
 
 ### Eagle
 1. 原理
@@ -67,8 +67,41 @@ tags: monitor 监控 方案
 > - 满足下列任意条件即发送报警邮件
 >   a. allErr(5): 所有接口一共发生 proxy error 次数
 >   b. urlErr(3): 单个接口发生 proxy error 次数
->   c. nodeErr(0): 发生 proxy error 接口的数量
+>   c. nodeErr(0): 发生 node error 接口的数量
 >   d. noExistErr(3): 单个接口错误包含为 'Request does not exist!' 的数量
 >   e. allNoExistErr(5): 所有接口错误包含为 'Request does not exist!' 的数量
+<a href="/images/16/5.png" data-lightbox="img5">
+  ![5](/images/16/5.png)
+</a>
 
-### Grafana
+### Monitor
+1. 原理
+  RoboMongo 配置某种数据的过滤规则，然后在监控中心配置报警规则，最后在 Grafana 查看图形列表
+
+2. 数据流程图
+<a href="/images/16/6.png" data-lightbox="img6">
+  ![6](/images/16/6.png)
+</a>
+
+3. RoboMongo配置
+<a href="/images/16/7.png" data-lightbox="img7">
+  ![7](/images/16/7.png)
+</a>
+- name/id 显示和筛选
+- data 对应埋点中数据
+  - properties|channel 根据该字段过滤
+  - properties|page_url 根据该字段过滤
+  - project_id 项目
+  - emit Monitor中使用的字段
+  - to_heavy_way 结果的计算方法
+  - event 事件类型
+
+4. Monitor 配置
+<a href="/images/16/8.png" data-lightbox="img8">
+  ![8](/images/16/8.png)
+</a>
+<a href="/images/16/9.png" data-lightbox="img9">
+  ![9](/images/16/9.png)
+</a>
+
+
