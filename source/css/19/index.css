@@ -1,0 +1,129 @@
+.common {
+  margin: auto;
+  width: 0;
+  height: 0;
+}
+/*三角*/
+.triangle {
+  border-top: 50px solid red;
+  border-right: 50px solid green;
+  border-bottom: 50px solid blue;
+  border-left: 50px solid yellow;
+}
+.top-triangle {
+  border-top: 50px solid red;
+  border-right: 50px solid transparent;
+  /*border-bottom: 50px solid transparent;*/
+  border-left: 50px solid transparent;
+}
+.left-top-triangle1 {
+  border-top: 50px solid red;
+  border-right: 50px solid transparent;
+  /*border-bottom: 50px solid transparent;*/
+  /*border-left: 50px solid transparent;*/
+}
+.left-top-triangle2 {
+  /*border-top: 50px solid red;*/
+  /*border-right: 50px solid transparent;*/
+  border-bottom: 50px solid transparent;
+  border-left: 50px solid yellow;
+}
+/*箭头*/
+.arrow {
+  position: relative;
+  border-top: 50px solid red;
+  border-right: 50px solid transparent;
+  border-left: 50px solid transparent;
+  transform: rotate(-15deg);
+}
+.arrow::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px 0 0 0;
+  border-top: 30px solid red;
+  transform: rotate(90deg);
+  top: -160px;
+  left: -100px;
+}
+/*梯形*/
+.trapezoid {
+  /*border-top: 50px solid red;*/
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid blue;
+  border-left: 25px solid transparent;
+  width: 50px;
+}
+/*心形*/
+.heart {
+  position: relative;
+  width: 100px; height: 90px;
+}
+.heart:before,
+.heart:after {
+  position: absolute;
+  content: "";
+  left: 50px; top: 0;
+  width: 50px; height: 80px;
+  background: red;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+.heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+/*placeholder-shown*/
+.input-wrapper {
+  position: relative;
+}
+.input-wrapper > input {
+  font-size: 20px;
+  padding: 20px 10px;
+}
+.input-wrapper > input:placeholder-shown::placeholder {
+  color:transparent;
+}
+.input-wrapper > label {
+  font-size: 16px;
+  position: absolute;
+  left : 12px;
+  top: 16px;
+  pointer-events: none;
+  transition: all 1s;
+}
+.input-wrapper > input:focus + label,
+.input-wrapper > input:not(:placeholder-shown) + label {
+  transform: translateY(-10px);
+  font-size: 12px;
+  transition: all 1s;
+}
+/*focus-within*/
+.input-wrapper-focus {
+  display: flex;
+  position: relative;
+  border:1px solid #000;
+  padding: 5px 5px 20px 5px;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+.input-wrapper-focus:focus-within {
+  border-color: blue;
+}
+.input-wrapper-focus > textarea{
+  flex: 1;
+  width: 100%;
+  border: 0;
+  outline: none;
+  resize: none;
+}
+.input-wrapper-focus > label {
+  position: absolute;
+  line-height: 1;
+  right: 4px;
+  bottom: 4px;
+}
