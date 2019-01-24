@@ -46,9 +46,9 @@ tags: monitor 监控 方案
 > - 1C4DB28E-1104-4568-ACEC-AD1D52C66187
 
 4. client发送日志规则
-- proxy access 正常访问日志，用于业务分析
-- proxy error 后端Node错误，包含接口状态码异常和接口抛异常两种
-  - 接口状态码异常
+- proxy access(正常访问日志，用于业务分析)
+- proxy error(后端Node错误，包含接口状态码异常和接口抛异常两种)
+  - 接口状态码异常(包含'Request does not exist!')
     <a href="/images/16/3.png" data-lightbox="img3">
       ![3](/images/16/3.png)
     </a>
@@ -56,7 +56,7 @@ tags: monitor 监控 方案
     <a href="/images/16/2.png" data-lightbox="img2">
       ![2](/images/16/2.png)
     </a>
-- node error 前端node错误
+- node error(前端node错误)
 <a href="/images/16/4.png" data-lightbox="img4">
   ![4](/images/16/4.png)
 </a>
@@ -65,18 +65,18 @@ tags: monitor 监控 方案
 
 > - 每隔10s统计一次数据
 > - 满足下列任意条件即发送报警邮件
->   a. allErr(5): 所有接口一共发生 proxy error 次数
->   b. urlErr(3): 单个接口发生 proxy error 次数
->   c. nodeErr(0): 发生 node error 接口的数量
->   d. noExistErr(3): 单个接口错误包含为 'Request does not exist!' 的数量
->   e. allNoExistErr(5): 所有接口错误包含为 'Request does not exist!' 的数量
+>   a. allErr(5): 所有`接口抛异常`发生 proxy error 次数
+>   b. urlErr(3): 单个`接口抛异常`发生 proxy error 次数
+>   c. nodeErr(0): 发生 `node error` 接口的次数
+>   d. allNoExistErr(5): 所有`接口状态码异常`发生 proxy error 次数
+>   e. noExistErr(3): 单个`接口状态码异常`发生 proxy error 次数
 <a href="/images/16/5.png" data-lightbox="img5">
   ![5](/images/16/5.png)
 </a>
 
 ### Monitor
 1. 原理
-  RoboMongo 配置某种数据的过滤规则，然后在监控中心配置报警规则，最后在 Grafana 查看图形列表
+  RoboMongo 配置某种数据的过滤规则，然后在监控中心配置报警规则，最后在 Grafana 查看图形监控
 
 2. 数据流程图
 <a href="/images/16/6.png" data-lightbox="img6">
