@@ -1,0 +1,23 @@
+.float-wrapper {
+  background-color: pink;
+}
+.float-wrapper > span {
+  float: left;
+}
+.float-wrapper > span:nth-of-type(3) {
+  clear:both;
+}
+.clear {
+  clear:both;
+}
+
+.min-max {
+  height: 100px!important;
+  width: 100px;
+  background-color: pink;
+  max-height: 50px;
+}
+
+.test {
+  margin: -50px 0 -20px;
+}
