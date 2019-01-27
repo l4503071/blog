@@ -18,6 +18,31 @@
   max-height: 50px;
 }
 
-.test {
-  margin: -50px 0 -20px;
+.margin-wrapper5 {
+  background-color: rgba(0,0,100,0.5);
+}
+
+.margin-wrapper5 > .child {
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+  margin-left: auto;
+}
+
+.margin-wrapper6 {
+  height: 400px;
+  position: relative;
+  background-color: rgba(0,0,100,0.5);
+}
+
+.margin-wrapper6 > .child {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+  margin: auto;
 }

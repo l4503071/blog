@@ -83,10 +83,25 @@ tags: CSS世界
 > 2. 相邻块级元素（非BFC）上下的 margin 会合并
 > 3. 父级和第一个(or 最后一个)子元素，margin 会合并(全部作用到父级上)
 > 4. margin 合并规则：正正取最大，负负取最负，正负值相加
+> 5. margin-left: auto; 可以实现块级元素右对齐 (或水平居中)
+
+<div class="margin-wrapper5">
+  <div class="child">
+  </div>
+</div>
+
+> 6. margin: auto; 和绝对定位可以使块级元素垂直水平居中
+
+<div class="margin-wrapper6">
+  <div class="child">
+  </div>
+</div>
+
+> 7. margin: auto; 可以起作用的前提：去掉对应方向 height(或width)，块级元素可以自己撑满父元素
+
+
+
 
 ## 6. 内联元素
 
 > 1. 高度完全受 font-size 大小控制
-
-
-<div class="test">12399392939242993313123132131231231231</div><div class="test">123</div>
