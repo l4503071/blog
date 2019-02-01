@@ -1,6 +1,6 @@
 ---
 title: 读书笔记-《CSS世界》
-cover: '/images/common/img{num}.jpg'
+cover: '/images/common/img21.jpeg'
 date: 2019-01-24 16:05:43
 tags: CSS世界
 ---
