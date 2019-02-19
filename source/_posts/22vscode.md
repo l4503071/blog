@@ -45,3 +45,7 @@ tags: vscode
 
 > VS Code 命令行启动:
 > `⇧⌘P` 搜索 code 并安装，在命令中使用 code fileName 即可 
+
+## plugin
+1. [Paste and Indent](https://marketplace.visualstudio.com/items?itemName=Rubymaniac.vscode-paste-and-indent)
+> 代码缩进控制

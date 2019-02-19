@@ -105,3 +105,13 @@ tags: CSS世界
 ## 6. 内联元素
 
 > 1. 高度完全受 font-size 大小控制
+
+## 7. BFC 块级格式化上下文
+- html 根元素
+- float 不为 none
+- overflow 不为 visible
+- display 为 table-cell, table-caption, inline-block
+- position 不为 relative, static
+
+## 8. 滚动
+- 在PC端，无论什么浏览器，默认滚动均来自 html 标签
