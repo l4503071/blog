@@ -115,3 +115,5 @@ tags: CSS世界
 
 ## 8. 滚动
 - 在PC端，无论什么浏览器，默认滚动均来自 html 标签
+  - PC端获得滚动高度： document.documentElement.scrollTop
+  - 移动端获得滚动高度：document.body.scrollTop
