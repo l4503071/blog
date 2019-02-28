@@ -37,6 +37,7 @@ tags: vscode
 22.  `⌘K M`: 改变文件语言
 23.  `⌘K ⌘T`: 更改主题
 24.  `⌥⌘[ / ⌥⌘]`: 折叠块，打开块
+25.  `⌘K M`: 更改文档模式
 
 [keyboard shortcuts for Mac](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
 <a href="/images/22/1.png" data-lightbox="img1">
