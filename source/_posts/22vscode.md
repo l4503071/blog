@@ -48,5 +48,11 @@ tags: vscode
 > `⇧⌘P` 搜索 code 并安装，在命令中使用 code fileName 即可 
 
 ## plugin
+
 1. [Paste and Indent](https://marketplace.visualstudio.com/items?itemName=Rubymaniac.vscode-paste-and-indent)
 > 代码缩进控制
+
+## 问题
+
+1. Could not create temporary directory: 权限被拒绝
+> 执行 sudo chown $USER ~/Library/Caches/com.microsoft.VSCode.ShipIt/

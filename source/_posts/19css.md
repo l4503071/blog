@@ -212,4 +212,21 @@ div, span:focus1 {
 ```
 <div class="input-wrapper-focus"><textarea type="text" rows="4" placeholder="请输入姓名"></textarea><label>100</label></div>
 
+8. 文本省略
+   1. 单行  
+    ```css
+    width: 100px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    ```
+    2. 多行
+   ```css
+    width: 100px;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+   ```
 
