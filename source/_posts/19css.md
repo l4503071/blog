@@ -230,3 +230,87 @@ div, span:focus1 {
     overflow: hidden;
    ```
 
+9. loading 效果
+
+<div class="bouncing-loader">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+```html
+<div class="bouncing-loader">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+```
+
+```css
+@keyframes bouncing-loader {
+  to {
+    opacity: 0.1;
+    transform: translate3d(0, -1rem, 0);
+  }
+}
+.bouncing-loader {
+  display: flex;
+  justify-content: center;
+}
+.bouncing-loader > div {
+  width: 1rem;
+  height: 1rem;
+  margin: 3rem 0.2rem;
+  background: #8385aa;
+  border-radius: 50%;
+  animation: bouncing-loader 0.6s infinite alternate;
+}
+.bouncing-loader > div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.bouncing-loader > div:nth-child(3) {
+  animation-delay: 0.4s;
+}
+```
+
+<div class="spin-loading"></div>
+
+```html
+<div class="spin-loading"></div>
+```
+
+```css
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.spin-loading {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 3px solid gray;
+  border-right-color:pink;
+  animation: loading 2s linear infinite;
+}
+```
+
+
+10. css 阻止选择
+
+<div class="no-select">
+  你不能选择我...
+</div>
+```html
+<div class="no-select">
+  你不能选择我...
+</div>
+```
+```css
+user-select: none
+```
+
+
