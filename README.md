@@ -5,6 +5,6 @@
 
 ### 运行命令
 - 安装: yarn install
-- 调试: hexo server
+- 调试: hexo s
 - 线上: hexo g
 - 部署: hexo d
