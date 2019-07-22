@@ -56,3 +56,26 @@ tags: vscode
 
 1. Could not create temporary directory: 权限被拒绝
 > 执行 sudo chown $USER ~/Library/Caches/com.microsoft.VSCode.ShipIt/
+
+2. VS Code 使用 `decorator` 默认给出警告信息
+> 选择 `code -> preferences -> setting`,选择 `json` 模式,添加 `"javascript.implicitProjectConfig.experimentalDecorators": true` 即可
+
+3. webpack alias 支持 command+click 跳转
+> 在项目根目录创建 jsconfig.json文件,内容如下,其中**path**对应alias中的别名.
+ ```json
+ {
+  "exclude": [
+    "node_modules",
+    "build"
+  ],
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@yp-rax-services/*": ["services/*"],
+      "@yp-rax-floors/*": ["floors/*"],
+      "@yp-rax-components/*": ["components/*"],
+      "@yp-rax-modules/*": ["modules/*"]
+    }
+  }
+}
+ ```
